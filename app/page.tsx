@@ -6,101 +6,104 @@ export default function Home() {
       <div className="min-h-screen flex flex-col">
         <div className="flex-grow"></div>
         <header className="max-sm:sticky max-sm:z-50">
-          {/* Menu hamburguer (mobile) */}
-          <div className="md:hidden bg-amber-900 p-4 flex justify-end">
-            <button className="text-white">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
+          {/* Container alinhado com o main (max-w-7xl + px-8) */}
+          <div className="max-w-7xl mx-auto">
+            {/* Menu hamburguer (mobile) */}
+            <div className="md:hidden p-4 flex justify-end">
+              <button className="text-white">
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
 
-          {/* Navegação principal (desktop) */}
-          <div className="hidden md:flex justify-end bg-amber-900 py-4">
-            <nav>
-              <ul className="flex list-none items-center">
-                <li className="flex items-center">
-                  <a
-                    href="#"
-                    className="text-white hover:text-amber-300 transition-colors px-4"
-                  >
-                    Sobre
-                  </a>
-                  <span className="text-amber-600">|</span>
-                </li>
-                <li className="flex items-center">
-                  <a
-                    href="#"
-                    className="text-white hover:text-amber-300 transition-colors px-4"
-                  >
-                    Formação
-                  </a>
-                  <span className="text-amber-600">|</span>
-                </li>
-                <li className="flex items-center">
-                  <a
-                    href="#"
-                    className="text-white hover:text-amber-300 transition-colors px-4"
-                  >
-                    Experiências
-                  </a>
-                  <span className="text-amber-600">|</span>
-                </li>
-                <li className="flex items-center">
-                  <a
-                    href="#"
-                    className="text-white hover:text-amber-300 transition-colors px-4"
-                  >
-                    Portfólio
-                  </a>
-                  <span className="text-amber-600">|</span>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-white hover:text-amber-300 transition-colors px-4"
-                  >
-                    Contato
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            {/* Navegação principal (desktop) */}
+            <div className="hidden md:flex justify-end py-4 px-8">
+              <nav>
+                <ul className="flex list-none items-center">
+                  <li className="flex items-center">
+                    <a
+                      href="#"
+                      className="text-white hover:text-green-400 transition-colors px-4"
+                    >
+                      Sobre
+                    </a>
+                    <span className="text-green-600">|</span>
+                  </li>
+                  <li className="flex items-center">
+                    <a
+                      href="#"
+                      className="text-white hover:text-green-400 transition-colors px-4"
+                    >
+                      Formação
+                    </a>
+                    <span className="text-green-600">|</span>
+                  </li>
+                  <li className="flex items-center">
+                    <a
+                      href="#"
+                      className="text-white hover:text-green-400 transition-colors px-4"
+                    >
+                      Experiências
+                    </a>
+                    <span className="text-green-600">|</span>
+                  </li>
+                  <li className="flex items-center">
+                    <a
+                      href="#"
+                      className="text-white hover:text-green-400 transition-colors px-4"
+                    >
+                      Portfólio
+                    </a>
+                    <span className="text-green-600">|</span>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-white hover:text-green-400 transition-colors px-4"
+                    >
+                      Contato
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </header>
 
         {/* Conteúdo Principal */}
         <main>
-          <div className="flex justify-center">
-            <div className="flex flex-col md:flex-row max-w-7xl bg-amber-900 border-1 border-b-0 rounded-t-lg">
-              {/* Coluna de detalhes - Centralizada */}
-              <div className="details-col p-10 flex flex-col items-center relative">
-                {/* Imagem (circular com borda) */}
-                <div className="mb-6 -mt-42 z-10 w-60 h-60 rounded-full border-4 border-white overflow-hidden">
-                  <img
-                    src="sua-imagem.jpg"
+          <div className="flex justify-center pt-40 sm:pt-0">
+            <div className="flex flex-col md:flex-row max-w-7xl block-bg border-1 border-b-0 border-default rounded-t-lg">
+              <div className="details-col pt-10 pr-10 pl-10 pb-5 flex flex-col items-center relative">
+                <div className="mb-6 -mt-42 z-10 w-60 h-60 rounded-full border-2 border-default overflow-hidden relative">
+                  <Image
+                    src="/icon.png"
                     alt="Foto de perfil"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    priority
                   />
                 </div>
 
                 {/* Nome */}
                 <h2 className="text-white font-semibold text-2xl md:text-3xl mb-2 text-center">
-                  Seu Nome
+                  Jefferson Dutra
                 </h2>
 
                 {/* Cargo/Profissão */}
-                <h3 className="text-amber-200 font-semibold text-xl mb-6 text-center">
-                  Sua Profissão
+                <h3 className="text-green-500 font-semibold text-xl mb-6 text-center">
+                  Frontend Dev
                 </h3>
 
                 {/* Informações com ícones */}
@@ -118,7 +121,7 @@ export default function Home() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span>Sua Localização</span>
+                    <span>Passa Quatro - MG, Brasil</span>
                   </div>
 
                   {/* Email */}
@@ -131,15 +134,36 @@ export default function Home() {
                       <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                       <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                     </svg>
-                    <span>seu@email.com</span>
+                    <span>jeffinho.angelo@gmail.com</span>
                   </div>
+
+                  {/* Telefone fictício */}
+                  <div className="flex items-center justify-center text-white">
+                    <svg
+                      className="w-5 h-5 mr-2"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <span>+55 012 99231-3701</span>
+                  </div>
+                </div>
+
+                {/* Ponto divisor */}
+                <div className="w-full flex justify-center mb-5">
+                  <span className="text-gray-400 text-xl">•</span>
                 </div>
 
                 {/* Redes sociais */}
                 <div className="flex justify-center space-x-4">
                   <a
                     href="#"
-                    className="text-white hover:text-amber-300 transition-colors"
+                    className="text-white hover:text-green-400 transition-colors"
                   >
                     <svg
                       className="w-6 h-6"
@@ -151,7 +175,7 @@ export default function Home() {
                   </a>
                   <a
                     href="#"
-                    className="text-white hover:text-amber-300 transition-colors"
+                    className="text-white hover:text-green-400 transition-colors"
                   >
                     <svg
                       className="w-6 h-6"
@@ -163,7 +187,7 @@ export default function Home() {
                   </a>
                   <a
                     href="#"
-                    className="text-white hover:text-amber-300 transition-colors"
+                    className="text-white hover:text-green-400 transition-colors"
                   >
                     <svg
                       className="w-6 h-6"
@@ -176,273 +200,284 @@ export default function Home() {
                 </div>
 
                 {/* Linha divisória - aparece apenas em telas médias/grandes */}
-                <div className="hidden md:block absolute right-0 top-0 bottom-0 w-px bg-amber-700"></div>
+                <div className="hidden md:block absolute right-0 top-0 bottom-0 w-px border-color"></div>
+
+                {/* Linha divisória entre e-mail e redes sociais */}
+                <div className="w-full border-t border-gray-700 my-4 mt-10 -mb-2 md:hidden"></div>
+
+                <div className="hidden md:block mt-auto pt-6 text-gray-400 text-xs">
+                  © 2025 Dutra.dev. All rights reserved.
+                </div>
               </div>
 
               {/* Coluna de conteúdo */}
-              <div className="content-col p-8  text-white">
+              <div className="content-col p-8">
                 {/* Sobre Mim */}
                 <div className="mb-12 ">
-                  <h1 className="text-3xl font-semibold mb-6">Sobre Mim</h1>
-                  <p className="text-lg leading-relaxed">
-                    Aqui você pode adicionar seu texto sobre você, sua história,
-                    experiências e objetivos. Este espaço é totalmente
-                    personalizável conforme suas necessidades.
+                  <h1 className="text-3xl font-semibold mb-6 text-green-500">
+                    Sobre Mim 👨‍💻
+                  </h1>
+                  <p className="text-lg leading-relaxed text-white">
+                    <b>Engenheiro da Computação</b> com pós em Desenvolvimento{" "}
+                    <b>Fullstack</b>, atualmente com foco em <b>Front-End</b>.
+                    Experiência em Marketing Digital aplicada ao desenvolvimento
+                    de soluções técnicas eficientes e alinhadas com estratégias
+                    de negócio.
                   </p>
                 </div>
 
                 {/* Tech Stack */}
                 <div className="mb-12">
-                  <h1 className="text-3xl font-semibold mb-6">Tech Stack</h1>
+                  <h1 className="text-3xl font-semibold mb-6 text-green-500">
+                    Tech Stack
+                  </h1>
                   <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4">
-                    {/* Exemplo de item da Tech Stack */}
-                    <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                    {/* Lista de blocos */}
+                    <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
                       <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                        src="/tech-icons/html.svg"
                         alt="JavaScript"
-                        className="h-8 w-8 object-contain mb-2"
+                        className="h-7 w-7 object-contain mb-2 mt-1"
                       />
-                      <span className="text-sm">JavaScript</span>
+                      <span className="text-sm">HTML</span>
                     </div>
 
-                    {/* Você pode adicionar mais itens seguindo o mesmo padrão */}
-                    <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                    <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
                       <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                        src="/tech-icons/css.svg"
+                        alt="CSS"
+                        className="h-7 w-7 object-contain mb-2 mt-1"
+                      />
+                      <span className="text-sm">CSS</span>
+                    </div>
+
+                    <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                      <img
+                        src="/tech-icons/js.svg"
+                        alt="Javascript"
+                        className="h-7 w-7 object-contain mb-2 mt-1"
+                      />
+                      <span className="text-sm">Javascript</span>
+                    </div>
+
+                    <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                      <img
+                        src="/tech-icons/ts.svg"
+                        alt="Typescript"
+                        className="h-7 w-7 object-contain mb-2 mt-1"
+                      />
+                      <span className="text-sm">Typescript</span>
+                    </div>
+
+                    <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                      <img
+                        src="/tech-icons/reactjs.svg"
                         alt="React"
-                        className="h-8 w-8 object-contain mb-2"
+                        className="h-7 w-7 object-contain mb-2 mt-1"
                       />
                       <span className="text-sm">React</span>
                     </div>
 
-                    <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                    <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
                       <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                        src="/tech-icons/node.svg"
+                        alt="Node"
+                        className="h-7 w-7 object-contain mb-2 mt-1"
+                      />
+                      <span className="text-sm">Node</span>
+                    </div>
+
+                    <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                      <img
+                        src="/tech-icons/next.svg"
+                        alt="Next"
+                        className="h-7 w-7 object-contain mb-2 mt-1"
+                      />
+                      <span className="text-sm">Next</span>
+                    </div>
+
+                    <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                      <img
+                        src="/tech-icons/jest.svg"
+                        alt="Jest"
+                        className="h-7 w-7 object-contain mb-2 mt-1"
+                      />
+                      <span className="text-sm">Jest</span>
+                    </div>
+
+                    <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                      <img
+                        src="/tech-icons/tailwind.svg"
                         alt="Tailwind"
-                        className="h-8 w-8 object-contain mb-2"
+                        className="h-7 w-7 object-contain mb-2 mt-1"
                       />
                       <span className="text-sm">Tailwind</span>
                     </div>
-
-                    <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center hover:scale-105 transition-transform">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                        alt="Tailwind"
-                        className="h-8 w-8 object-contain mb-2"
-                      />
-                      <span className="text-sm">Tailwind</span>
-                    </div>
-
-                    <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center hover:scale-105 transition-transform">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                        alt="Tailwind"
-                        className="h-8 w-8 object-contain mb-2"
-                      />
-                      <span className="text-sm">Tailwind</span>
-                    </div>
-
-                    <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center hover:scale-105 transition-transform">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                        alt="Tailwind"
-                        className="h-8 w-8 object-contain mb-2"
-                      />
-                      <span className="text-sm">Tailwind</span>
-                    </div>
-
-                    <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center hover:scale-105 transition-transform">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                        alt="Tailwind"
-                        className="h-8 w-8 object-contain mb-2"
-                      />
-                      <span className="text-sm">Tailwind</span>
-                    </div>
-
-                    <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center hover:scale-105 transition-transform">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                        alt="Tailwind"
-                        className="h-8 w-8 object-contain mb-2"
-                      />
-                      <span className="text-sm">Tailwind</span>
-                    </div>
-
-                    <div className="bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center hover:scale-105 transition-transform">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                        alt="Tailwind"
-                        className="h-8 w-8 object-contain mb-2"
-                      />
-                      <span className="text-sm">Tailwind</span>
-                    </div>
-
-                    {/* Adicione quantos itens quiser */}
                   </div>
                 </div>
 
                 {/* Projetos Recentes */}
-                <div className="mb-5">
-                  <div className="flex justify-between items-center mb-8">
-                    <h1 className="text-3xl font-bold bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
-                      Projetos Recentes
-                    </h1>
-                    <a
-                      href="#"
-                      className="text-sm font-medium underline underline-offset-4 hover:text-indigo-400 transition-colors"
-                    >
-                      Ver todos →
-                    </a>
+                <div className="flex justify-between items-center mb-8">
+                  <h1 className="text-3xl font-semibold text-green-500">
+                    Projetos Recentes
+                  </h1>
+                  <a
+                    href="#"
+                    className="text-sm font-medium underline underline-offset-4 hover:text-green-400 transition-colors"
+                  >
+                    Ver todos →
+                  </a>
+                </div>
+
+                {/* Grid de Projetos */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {/* Projeto 1 - Destaque */}
+                  <div className="group relative h-56 rounded-2xl overflow-hidden">
+                    <img
+                      src="https://placehold.co/600x400/1e293b/94a3b8?text=Dashboard+App"
+                      alt="Dashboard Analytics"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+
+                    {/* Overlay e tags (sempre visíveis) */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
+                      <div className="flex flex-wrap gap-2 mb-2">
+                        <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                            alt="React"
+                            className="w-3 h-3 mr-1.5"
+                          />
+                          React
+                        </span>
+                        <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+                            alt="TypeScript"
+                            className="w-3 h-3 mr-1.5"
+                          />
+                          TypeScript
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Conteúdo que aparece no hover */}
+                    <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
+                      <div className="flex justify-between items-start mb-3">
+                        <h3 className="text-xl font-bold text-white">
+                          Dashboard Analytics
+                        </h3>
+                        <span className="text-xs font-medium bg-indigo-500/20 text-indigo-400 px-2 py-1 rounded-full">
+                          Destaque
+                        </span>
+                      </div>
+                      <p className="text-gray-300 text-sm mb-4">
+                        Plataforma de análise de dados com visualizações
+                        interativas e relatórios em tempo real para tomada de
+                        decisão estratégica.
+                      </p>
+                      <a
+                        href="#"
+                        className="text-indigo-400 text-sm font-medium inline-flex items-center hover:underline"
+                      >
+                        Ver projeto <span className="ml-1">→</span>
+                      </a>
+                    </div>
                   </div>
 
-                  {/* Grid de Projetos */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {/* Projeto 1 - Destaque */}
-                    <div className="group relative h-64 rounded-2xl overflow-hidden">
-                      {/* Imagem de fundo com efeito de vidro no hover */}
-                      <img
-                        src="https://placehold.co/600x400/1e293b/94a3b8?text=Dashboard+App"
-                        alt="Dashboard Analytics"
-                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-
-                      {/* Overlay e tags (sempre visíveis) */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
-                        <div className="flex flex-wrap gap-2 mb-2">
-                          <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
-                            <img
-                              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                              alt="React"
-                              className="w-3 h-3 mr-1.5"
-                            />
-                            React
-                          </span>
-                          <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
-                            <img
-                              src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
-                              alt="TypeScript"
-                              className="w-3 h-3 mr-1.5"
-                            />
-                            TypeScript
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* Conteúdo que aparece no hover */}
-                      <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
-                        <div className="flex justify-between items-start mb-3">
-                          <h3 className="text-xl font-bold text-white">
-                            Dashboard Analytics
-                          </h3>
-                          <span className="text-xs font-medium bg-indigo-500/20 text-indigo-400 px-2 py-1 rounded-full">
-                            Destaque
-                          </span>
-                        </div>
-                        <p className="text-gray-300 text-sm mb-4">
-                          Plataforma de análise de dados com visualizações
-                          interativas e relatórios em tempo real para tomada de
-                          decisão estratégica.
-                        </p>
-                        <a
-                          href="#"
-                          className="text-indigo-400 text-sm font-medium inline-flex items-center hover:underline"
-                        >
-                          Ver projeto <span className="ml-1">→</span>
-                        </a>
+                  {/* Projeto 2 */}
+                  <div className="group relative h-56 rounded-2xl overflow-hidden">
+                    <img
+                      src="https://placehold.co/600x400/1e293b/94a3b8?text=E-commerce"
+                      alt="E-commerce Platform"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
+                      <div className="flex flex-wrap gap-2 mb-2">
+                        <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                            alt="JavaScript"
+                            className="w-3 h-3 mr-1.5"
+                          />
+                          JavaScript
+                        </span>
+                        <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                            alt="Node.js"
+                            className="w-3 h-3 mr-1.5"
+                          />
+                          Node.js
+                        </span>
                       </div>
                     </div>
-
-                    {/* Projeto 2 */}
-                    <div className="group relative h-64 rounded-2xl overflow-hidden">
-                      <img
-                        src="https://placehold.co/600x400/1e293b/94a3b8?text=E-commerce"
-                        alt="E-commerce Platform"
-                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
-                        <div className="flex flex-wrap gap-2 mb-2">
-                          <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
-                            <img
-                              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-                              alt="JavaScript"
-                              className="w-3 h-3 mr-1.5"
-                            />
-                            JavaScript
-                          </span>
-                          <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
-                            <img
-                              src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                              alt="Node.js"
-                              className="w-3 h-3 mr-1.5"
-                            />
-                            Node.js
-                          </span>
-                        </div>
-                      </div>
-                      <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
-                        <h3 className="text-xl font-bold text-white mb-3">
-                          E-commerce Platform
-                        </h3>
-                        <p className="text-gray-300 text-sm mb-4">
-                          Solução completa de e-commerce com carrinho dinâmico,
-                          checkout seguro e integração com principais gateways
-                          de pagamento.
-                        </p>
-                        <a
-                          href="#"
-                          className="text-indigo-400 text-sm font-medium inline-flex items-center hover:underline"
-                        >
-                          Ver projeto <span className="ml-1">→</span>
-                        </a>
-                      </div>
-                    </div>
-
-                    {/* Projeto 3 */}
-                    <div className="group relative h-64 rounded-2xl overflow-hidden">
-                      <img
-                        src="https://placehold.co/600x400/1e293b/94a3b8?text=Mobile+App"
-                        alt="Health Tracker App"
-                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
-                        <div className="flex flex-wrap gap-2 mb-2">
-                          <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
-                            <img
-                              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                              alt="React Native"
-                              className="w-3 h-3 mr-1.5"
-                            />
-                            React Native
-                          </span>
-                          <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
-                            <img
-                              src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
-                              alt="TypeScript"
-                              className="w-3 h-3 mr-1.5"
-                            />
-                            TypeScript
-                          </span>
-                        </div>
-                      </div>
-                      <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
-                        <h3 className="text-xl font-bold text-white mb-3">
-                          Health Tracker
-                        </h3>
-                        <p className="text-gray-300 text-sm mb-4">
-                          Aplicativo móvel para monitoramento de saúde,
-                          atividades físicas e nutrição com gráficos interativos
-                          e personalizados.
-                        </p>
-                        <a
-                          href="#"
-                          className="text-indigo-400 text-sm font-medium inline-flex items-center hover:underline"
-                        >
-                          Ver projeto <span className="ml-1">→</span>
-                        </a>
-                      </div>
+                    <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
+                      <h3 className="text-xl font-bold text-white mb-3">
+                        E-commerce Platform
+                      </h3>
+                      <p className="text-gray-300 text-sm mb-4">
+                        Solução completa de e-commerce com carrinho dinâmico,
+                        checkout seguro e integração com principais gateways de
+                        pagamento.
+                      </p>
+                      <a
+                        href="#"
+                        className="text-indigo-400 text-sm font-medium inline-flex items-center hover:underline"
+                      >
+                        Ver projeto <span className="ml-1">→</span>
+                      </a>
                     </div>
                   </div>
+
+                  {/* Projeto 3 */}
+                  <div className="group relative h-56 rounded-2xl overflow-hidden">
+                    <img
+                      src="https://placehold.co/600x400/1e293b/94a3b8?text=Mobile+App"
+                      alt="Health Tracker App"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
+                      <div className="flex flex-wrap gap-2 mb-2">
+                        <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                            alt="React Native"
+                            className="w-3 h-3 mr-1.5"
+                          />
+                          React Native
+                        </span>
+                        <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+                            alt="TypeScript"
+                            className="w-3 h-3 mr-1.5"
+                          />
+                          TypeScript
+                        </span>
+                      </div>
+                    </div>
+                    <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
+                      <h3 className="text-xl font-bold text-white mb-3">
+                        Health Tracker
+                      </h3>
+                      <p className="text-gray-300 text-sm mb-4">
+                        Aplicativo móvel para monitoramento de saúde, atividades
+                        físicas e nutrição com gráficos interativos e
+                        personalizados.
+                      </p>
+                      <a
+                        href="#"
+                        className="text-indigo-400 text-sm font-medium inline-flex items-center hover:underline"
+                      >
+                        Ver projeto <span className="ml-1">→</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="md:hidden block mt-auto pt-6 text-gray-400 text-xs">
+                  © 2025 Dutra.dev. All rights reserved.
                 </div>
               </div>
             </div>
