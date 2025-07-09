@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -84,49 +85,49 @@ export default function Header() {
               <nav className="px-6 py-4">
                 <ul className="flex flex-col space-y-6">
                   <li>
-                    <a
+                    <Link
                       href="/"
                       className="text-white hover:text-green-400 transition-colors text-lg block py-2"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Sobre
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/formacao"
                       className="text-white hover:text-green-400 transition-colors text-lg block py-2"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Formação
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/experiencias"
                       className="text-white hover:text-green-400 transition-colors text-lg block py-2"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Experiências
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/portfolio"
                       className="text-white hover:text-green-400 transition-colors text-lg block py-2"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Portfólio
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/contato"
                       className="text-white hover:text-green-400 transition-colors text-lg block py-2"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Contato
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -139,48 +140,48 @@ export default function Header() {
           <nav>
             <ul className="flex list-none items-center">
               <li className="flex items-center">
-                <a
+                <Link
                   href="/"
                   className="text-white hover:text-green-400 transition-colors px-4"
                 >
                   Sobre
-                </a>
+                </Link>
                 <span className="text-green-600">|</span>
               </li>
               <li className="flex items-center">
-                <a
+                <Link
                   href="/formacao"
                   className="text-white hover:text-green-400 transition-colors px-4"
                 >
                   Formação
-                </a>
+                </Link>
                 <span className="text-green-600">|</span>
               </li>
               <li className="flex items-center">
-                <a
+                <Link
                   href="/experiencias"
                   className="text-white hover:text-green-400 transition-colors px-4"
                 >
                   Experiências
-                </a>
+                </Link>
                 <span className="text-green-600">|</span>
               </li>
               <li className="flex items-center">
-                <a
+                <Link
                   href="/portfolio"
                   className="text-white hover:text-green-400 transition-colors px-4"
                 >
                   Portfólio
-                </a>
+                </Link>
                 <span className="text-green-600">|</span>
               </li>
               <li>
-                <a
+                <Link
                   href="/contato"
                   className="text-white hover:text-green-400 transition-colors px-4"
                 >
                   Contato
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
