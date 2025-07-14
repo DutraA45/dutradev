@@ -16,14 +16,16 @@ export default function Contato() {
               </h2>
               <div className="w-16 h-1 bg-green-500 my-4"></div>
               <p className="text-lg text-white mb-8">
-                Adoraria ouvir você! Estou aberto a novas oportunidades e colaborações onde possa contribuir com meu conhecimento em desenvolvimento.
+                Adoraria ouvir você! Estou aberto a novas oportunidades e
+                colaborações onde possa contribuir com meu conhecimento em
+                desenvolvimento.
               </p>
               <ul className="space-y-3 mb-6 text-white">
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">✦</span>
                   <span>
-                    Disponível para oportunidades em Frontend (CLT,
-                    PJ ou freelance)
+                    Disponível para oportunidades em Frontend (CLT, PJ ou
+                    freelance)
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -47,7 +49,11 @@ export default function Contato() {
               <h3 className="text-2xl font-semibold mb-6 text-gray-800">
                 Entre em contato
               </h3>
-              <form className="space-y-6">
+              <form
+                className="space-y-6"
+                action="https://formspree.io/f/mwpbgajl"
+                method="POST"
+              >
                 <div>
                   <input
                     type="text"
