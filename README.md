@@ -1,8 +1,8 @@
 <a name="readme-top"></a>
 
-[![SeuNome.com built with Next.js](https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=Next.js&labelColor=000)](https://nextjs.org/) [![GitHub license](https://img.shields.io/github/license/seu-usuario/seu-portfolio?style=for-the-badge&labelColor=000)](https://github.com/seu-usuario/seu-portfolio/blob/main/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&labelColor=000)](https://github.com/seu-usuario/seu-portfolio/blob/main/CONTRIBUTING.md)
+[![dutradev.vercel.app/ built with Next.js](https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=Next.js&labelColor=000)](https://nextjs.org/) [![GitHub license](https://img.shields.io/github/license/DutraA45/dutradev?style=for-the-badge&labelColor=000)](https://github.com/seu-usuario/seu-portfolio/blob/main/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&labelColor=000)](https://github.com/DutraA45/dutradev/blob/main/CONTRIBUTING.md)
 
-[SeuNome.com]: https://dutradev.vercel.app/
+[dutradev.vercel.app]: https://dutradev.vercel.app/
 
 <div align="center">
   <a href="https://dutradev.vercel.app/">
@@ -76,7 +76,7 @@ Este [trabalho] está licenciado sob [Creative Commons Atribuição 4.0 Internac
 
 [trabalho]: https://github.com/DutraA45/dutradev
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
-[seusite.com]: https://dutradev.vercel.app/
+[dutradev.vercel.app]: https://dutradev.vercel.app/
 
 > [!IMPORTANTE]
 >
