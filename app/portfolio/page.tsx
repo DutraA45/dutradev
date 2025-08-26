@@ -1,45 +1,34 @@
 export default function portfolio() {
   const projects = [
     {
-      title: "Health Tracker",
-      description: "Aplicativo móvel para monitoramento de saúde, atividades físicas e nutrição com gráficos interativos e personalizados.",
-      image: "https://placehold.co/600x400/1e293b/94a3b8?text=Mobile+App",
-      tags: [
-        { name: "React Native", icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" },
-        { name: "TypeScript", icon: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" }
-      ],
-      link: "#"
-    },
-    {
-      title: "E-commerce Platform",
-      description: "Plataforma de comércio eletrônico completa com carrinho de compras, checkout e integração com pagamentos.",
-      image: "https://placehold.co/600x400/1e293b/94a3b8?text=E-commerce",
-      tags: [
-        { name: "Next.js", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
-        { name: "Node.js", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" },
-        { name: "MongoDB", icon: "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" }
-      ],
-      link: "#"
-    },
-    {
-      title: "Task Management",
-      description: "Sistema de gerenciamento de tarefas com drag-and-drop, categorias e lembretes inteligentes.",
-      image: "https://placehold.co/600x400/1e293b/94a3b8?text=Task+App",
-      tags: [
-        { name: "Vue.js", icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" },
-        { name: "Firebase", icon: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" }
-      ],
-      link: "#"
-    },
-    {
       title: "Portfolio Website",
       description: "Website pessoal para exibição de projetos com design responsivo e animações modernas.",
       image: "https://placehold.co/600x400/1e293b/94a3b8?text=Portfolio",
       tags: [
-        { name: "React", icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" },
+        { name: "Next.js", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
         { name: "Tailwind CSS", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" }
       ],
-      link: "#"
+      link: "https://github.com/DutraA45/dutradev"
+    },
+    {
+      title: "Cellflow Manager",
+      description: "Automação inteligente para gestão de assistência técnica, integrando planilhas e dashboards em tempo real.",
+      image: "https://placehold.co/600x400/1e293b/94a3b8?text=Cellflow+Manager",
+      tags: [
+        { name: "Next.js", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
+        { name: "Node.js", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" }
+      ],
+      link: "https://github.com/DutraA45/cellflow-manager"
+    },
+    {
+      title: "FireWatch 2024",
+      description: "Análise de Dados sobre Incêndios Florestais e Seca no Brasil em 2024.",
+      image: "https://placehold.co/600x400/1e293b/94a3b8?text=FireWatch+Analysis",
+      tags: [
+        { name: "Vue.js", icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" },
+        { name: "Firebase", icon: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" }
+      ],
+      link: "https://github.com/DutraA45/FireWatch_Brazil_2024"
     }
   ];
 

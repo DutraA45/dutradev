@@ -133,7 +133,7 @@ export default function Home() {
             Projetos Recentes
           </h1>
           <a
-            href="#"
+            href="/portfolio"
             className="text-sm font-medium underline underline-offset-4 hover:text-green-400 transition-colors"
           >
             Ver todos →
@@ -145,8 +145,8 @@ export default function Home() {
           {/* Projeto 1 - Destaque */}
           <div className="group relative h-56 rounded-2xl overflow-hidden">
             <Image
-              src="https://placehold.co/600x400/1e293b/94a3b8?text=Dashboard+App"
-              alt="Dashboard Analytics"
+              src="https://placehold.co/600x400/1e293b/94a3b8?text=Portfólio"
+              alt="Portfólio Website"
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-500"
             />
@@ -181,16 +181,14 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
               <div className="flex justify-between items-start mb-3">
                 <h3 className="text-xl font-bold text-white">
-                  Dashboard Analytics
+                  Portfólio
                 </h3>
                 <span className="text-xs font-medium bg-indigo-500/20 text-indigo-400 px-2 py-1 rounded-full">
                   Destaque
                 </span>
               </div>
               <p className="text-gray-300 text-sm mb-4">
-                Plataforma de análise de dados com visualizações
-                interativas e relatórios em tempo real para tomada de
-                decisão estratégica.
+                Website pessoal para exibição de projetos com design responsivo e animações modernas.
               </p>
               <a
                 href="#"
@@ -204,8 +202,8 @@ export default function Home() {
           {/* Projeto 2 */}
           <div className="group relative h-56 rounded-2xl overflow-hidden">
             <Image
-              src="https://placehold.co/600x400/1e293b/94a3b8?text=E-commerce"
-              alt="E-commerce Platform"
+              src="https://placehold.co/600x400/1e293b/94a3b8?text=Cellflow+Manager"
+              alt="Cellflow Manager"
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-500"
             />
@@ -235,12 +233,10 @@ export default function Home() {
             </div>
             <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
               <h3 className="text-xl font-bold text-white mb-3">
-                E-commerce Platform
+                Cellflow Manager
               </h3>
               <p className="text-gray-300 text-sm mb-4">
-                Solução completa de e-commerce com carrinho dinâmico,
-                checkout seguro e integração com principais gateways de
-                pagamento.
+                Automação inteligente para gestão de assistência técnica, integrando planilhas e dashboards em tempo real
               </p>
               <a
                 href="#"
@@ -254,8 +250,8 @@ export default function Home() {
           {/* Projeto 3 */}
           <div className="group relative h-56 rounded-2xl overflow-hidden">
             <Image
-              src="https://placehold.co/600x400/1e293b/94a3b8?text=Mobile+App"
-              alt="Health Tracker App"
+              src="https://placehold.co/600x400/1e293b/94a3b8?text=FireWatch+Analysis"
+              alt="FireWatch 2024"
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-500"
             />
@@ -285,12 +281,10 @@ export default function Home() {
             </div>
             <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
               <h3 className="text-xl font-bold text-white mb-3">
-                Health Tracker
+                FireWatch 2024
               </h3>
               <p className="text-gray-300 text-sm mb-4">
-                Aplicativo móvel para monitoramento de saúde, atividades
-                físicas e nutrição com gráficos interativos e
-                personalizados.
+                Análise de Dados sobre Incêndios Florestais e Seca no Brasil em 2024.
               </p>
               <a
                 href="#"
