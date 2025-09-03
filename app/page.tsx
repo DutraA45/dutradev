@@ -191,7 +191,7 @@ export default function Home() {
                 Website pessoal para exibição de projetos com design responsivo e animações modernas.
               </p>
               <a
-                href="#"
+                href="https://github.com/DutraA45/dutradev"
                 className="text-indigo-400 text-sm font-medium inline-flex items-center hover:underline"
               >
                 Ver projeto <span className="ml-1">→</span>
@@ -239,7 +239,7 @@ export default function Home() {
                 Automação inteligente para gestão de assistência técnica, integrando planilhas e dashboards em tempo real
               </p>
               <a
-                href="#"
+                href="https://github.com/DutraA45/cellflow-manager"
                 className="text-indigo-400 text-sm font-medium inline-flex items-center hover:underline"
               >
                 Ver projeto <span className="ml-1">→</span>
@@ -287,7 +287,7 @@ export default function Home() {
                 Análise de Dados sobre Incêndios Florestais e Seca no Brasil em 2024.
               </p>
               <a
-                href="#"
+                href="https://github.com/DutraA45/FireWatch_Brazil_2024"
                 className="text-indigo-400 text-sm font-medium inline-flex items-center hover:underline"
               >
                 Ver projeto <span className="ml-1">→</span>
