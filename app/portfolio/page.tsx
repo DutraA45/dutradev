@@ -49,7 +49,7 @@ export default function portfolio() {
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
-                  <div className="flex flex-wrap gap-2 mb-2">
+                  {/* <div className="flex flex-wrap gap-2 mb-2">
                     {project.tags.map((tag, tagIndex) => (
                       <span key={tagIndex} className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
                         <img
@@ -60,7 +60,7 @@ export default function portfolio() {
                         {tag.name}
                       </span>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
                 <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
                   <h3 className="text-xl font-bold text-white mb-3">
