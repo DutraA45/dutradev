@@ -14,20 +14,20 @@ export default function portfolio() {
       title: "Cellflow Manager",
       description: "Automação inteligente para gestão de assistência técnica, integrando planilhas e dashboards em tempo real.",
       image: "https://placehold.co/600x400/1e293b/94a3b8?text=Cellflow+Manager",
-      tags: [
-        { name: "Next.js", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
-        { name: "Node.js", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" }
-      ],
+      // tags: [
+      //   { name: "Next.js", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
+      //   { name: "Node.js", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" }
+      // ],
       link: "https://github.com/DutraA45/cellflow-manager"
     },
     {
       title: "FireWatch 2024",
       description: "Análise de Dados sobre Incêndios Florestais e Seca no Brasil em 2024.",
       image: "https://placehold.co/600x400/1e293b/94a3b8?text=FireWatch+Analysis",
-      tags: [
-        { name: "Vue.js", icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" },
-        { name: "Firebase", icon: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" }
-      ],
+      // tags: [
+      //   { name: "Vue.js", icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" },
+      //   { name: "Firebase", icon: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" }
+      // ],
       link: "https://github.com/DutraA45/FireWatch_Brazil_2024"
     }
   ];
