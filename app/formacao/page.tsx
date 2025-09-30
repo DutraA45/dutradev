@@ -30,8 +30,7 @@ export default function Formacao() {
               <p className="text-white text-xl font-semibold mb-1">Pós Graduação - Desenvolvimento Fullstack</p>
               <p className="text-white text-base font-light mb-2">jan de 2024 - set de 2025 · 2 anos</p>
               <p className="text-white text-base font-normal">
-                Comentários adicionais sobre a formação ou experiência nesta instituição.
-                Este é um campo de texto livre onde você pode adicionar mais detalhes.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet placerat accumsan. Donec pellentesque ultrices ex, ut pellentesque arcu. Suspendisse ac mauris in est dapibus varius vel vitae odio. Vestibulum consequat eros cursus arcu sollicitudin, ac sollicitudin diam dapibus. Cras dignissim finibus vehicula.
               </p>
             </div>
           </div>
@@ -56,8 +55,7 @@ export default function Formacao() {
               <p className="text-white text-xl font-semibold mb-1">Graduação - Engenharia da Computação</p>
               <p className="text-white text-base font-light mb-2">2018 - 2024 · 6 anos</p>
               <p className="text-white text-base font-normal">
-                Comentários adicionais sobre a formação ou experiência nesta instituição.
-                Este é um campo de texto livre onde você pode adicionar mais detalhes.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet placerat accumsan. Donec pellentesque ultrices ex, ut pellentesque arcu. Suspendisse ac mauris in est dapibus varius vel vitae odio. Vestibulum consequat eros cursus arcu sollicitudin, ac sollicitudin diam dapibus. Cras dignissim finibus vehicula.
               </p>
             </div>
           </div>
@@ -82,8 +80,7 @@ export default function Formacao() {
               <p className="text-white text-xl font-semibold mb-1">Técnico em Eletrônica</p>
               <p className="text-white text-base font-light mb-2">2015 - 2017 · 3 anos</p>
               <p className="text-white text-base font-normal">
-                Comentários adicionais sobre a formação ou experiência nesta instituição.
-                Este é um campo de texto livre onde você pode adicionar mais detalhes.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet placerat accumsan. Donec pellentesque ultrices ex, ut pellentesque arcu. Suspendisse ac mauris in est dapibus varius vel vitae odio. Vestibulum consequat eros cursus arcu sollicitudin, ac sollicitudin diam dapibus. Cras dignissim finibus vehicula.
               </p>
             </div>
           </div>
