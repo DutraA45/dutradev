@@ -219,16 +219,6 @@ export default function Home() {
                   />
                   JavaScript
                 </span>
-                <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
-                  <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-                    alt="Node.js"
-                    width={12}
-                    height={12}
-                    className="w-3 h-3 mr-1.5"
-                  />
-                  Node.js
-                </span>
               </div>
             </div>
             <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">

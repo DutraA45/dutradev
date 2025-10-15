@@ -2,34 +2,89 @@ export default function portfolio() {
   const projects = [
     {
       title: "Portfolio Website",
-      description: "Website pessoal para exibição de projetos com design responsivo e animações modernas.",
+      description:
+        "Website pessoal para exibição de projetos com design responsivo e animações modernas.",
       image: "https://placehold.co/600x400/1e293b/94a3b8?text=Portfolio",
       tags: [
-        { name: "Next.js", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
-        { name: "Tailwind CSS", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" }
+        {
+          name: "Next.js",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        },
       ],
-      link: "https://github.com/DutraA45/dutradev"
+      link: "https://github.com/DutraA45/dutradev",
     },
     {
       title: "Cellflow Manager",
-      description: "Automação inteligente para gestão de assistência técnica, integrando planilhas e dashboards em tempo real.",
+      description:
+        "Automação inteligente para gestão de assistência técnica, integrando planilhas e dashboards em tempo real.",
       image: "https://placehold.co/600x400/1e293b/94a3b8?text=Cellflow+Manager",
       // tags: [
       //   { name: "Next.js", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
       //   { name: "Node.js", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" }
       // ],
-      link: "https://github.com/DutraA45/cellflow-manager"
+      link: "https://github.com/DutraA45/cellflow-manager",
+    },
+    {
+      title: "QA Mastery",
+      description:
+        "Sistema full-stack de gestão de usuários com testes automatizados e integração contínua para garantir qualidade.",
+      image: "https://placehold.co/600x400/1e293b/94a3b8?text=QA+Mastery",
+      tags: [
+        {
+          name: "React",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+        },
+        {
+          name: "NodeJS",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+        },
+        {
+          name: "Cypress",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Cypress_logo_%282020%29.svg",
+        },
+      ],
+      link: "https://github.com/DutraA45/qa-mastery",
     },
     {
       title: "FireWatch 2024",
-      description: "Análise de Dados sobre Incêndios Florestais e Seca no Brasil em 2024.",
-      image: "https://placehold.co/600x400/1e293b/94a3b8?text=FireWatch+Analysis",
+      description:
+        "Análise de Dados sobre Incêndios Florestais e Seca no Brasil em 2024.",
+      image:
+        "https://placehold.co/600x400/1e293b/94a3b8?text=FireWatch+Analysis",
       // tags: [
       //   { name: "Vue.js", icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" },
       //   { name: "Firebase", icon: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" }
       // ],
-      link: "https://github.com/DutraA45/FireWatch_Brazil_2024"
-    }
+      link: "https://github.com/DutraA45/FireWatch_Brazil_2024",
+    },
+    {
+      title: "Iniflex CLI",
+      description:
+        "Sistema de gestão de funcionários via console em Java puro, aplicando conceitos fundamentais de POO e collections sem bibliotecas externas.",
+      image:
+        "https://placehold.co/600x400/1e293b/94a3b8?text=IniflexCLI",
+      // tags: [
+      //   { name: "Vue.js", icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" },
+      //   { name: "Firebase", icon: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" }
+      // ],
+      link: "https://github.com/DutraA45/IniflexCLI",
+    },
+    {
+      title: "Saas Landing Page",
+      description:
+        "Landing page moderna para SaaS desenvolvida com HTML e Tailwind CSS, focada no aprendizado do framework utility-first.",
+      image:
+        "https://placehold.co/600x400/1e293b/94a3b8?text=SaaS+Landing+Page",
+      // tags: [
+      //   { name: "Vue.js", icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" },
+      //   { name: "Firebase", icon: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" }
+      // ],
+      link: "https://github.com/DutraA45/SaaS-Landing-Page",
+    },
   ];
 
   return (
@@ -39,10 +94,13 @@ export default function portfolio() {
           <h1 className="text-3xl font-semibold mb-6 text-green-500">
             Portfólio
           </h1>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {projects.map((project, index) => (
-              <div key={index} className="group relative h-56 rounded-2xl overflow-hidden">
+              <div
+                key={index}
+                className="group relative h-56 rounded-2xl overflow-hidden"
+              >
                 <img
                   src={project.image}
                   alt={project.title}
@@ -79,7 +137,6 @@ export default function portfolio() {
               </div>
             ))}
           </div>
-          
         </div>
 
         <div className="md:hidden block mt-auto pt-6 text-gray-400 text-xs">
