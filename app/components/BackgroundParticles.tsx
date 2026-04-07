@@ -57,7 +57,7 @@ export default function BackgroundParticles() {
         },
         modes: {
           repulse: {
-            distance: 100,
+            distance: 70,
           },
         },
       },
