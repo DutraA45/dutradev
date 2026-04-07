@@ -19,7 +19,7 @@ export default function BackgroundParticles() {
   const options: ISourceOptions = useMemo(
     () => ({
       background: {
-        color: "transparent", // importante pro seu layout
+        color: "transparent",
       },
       fpsLimit: 120,
       particles: {
@@ -28,11 +28,11 @@ export default function BackgroundParticles() {
           density: { enable: true },
         },
         color: {
-          value: "#22c55e", // verde bonito
+          value: "#4ade80",
         },
         links: {
           enable: true,
-          color: "#22c55e",
+          color: "#4ade80",
           distance: 120,
           opacity: 0.2,
           width: 1,
