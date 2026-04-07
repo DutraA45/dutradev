@@ -41,7 +41,11 @@ export default function Experiencias() {
                 Set 2022 - Abr 2023
               </time>
               <p className="text-base font-normal text-white mt-2">
-                Continuei com todas as funções de front-end citadas nos dois cargos anteriores, mas desta vez com muita autonomia e reconhecimento, trazendo para clientes insights de mercado, inovações com base em dados gerados das próprias campanhas realizadas. Nesse momento, com foco total em data driven, análise de métricas de sucesso e relacionamento com cliente.
+                Atuação com maior autonomia no desenvolvimento front-end e
+                análise de dados. Foco em estratégias data-driven, geração de
+                insights para clientes e otimização de campanhas com base em
+                métricas de performance. Forte atuação no relacionamento com
+                clientes e tomada de decisão orientada por dados.
               </p>
             </li>
 
@@ -55,7 +59,11 @@ export default function Experiencias() {
                 Abr 2022 - Set 2022
               </time>
               <p className="text-base font-normal text-white mt-2">
-                Atuava diretamente desde o ínicio de todas as campanhas de marketing, analisando o impacto de todas as ações digitais e com foco em e-mail marketing e SMS. Fui o primeiro a realizar gerenciamento de Leads na agência, no qual se tornou um produto e me certiquei em especialista em e-mail marketing na plataforma VEEVA. Também realizava criação e alterações de conteúdos de páginas em Wordpress.
+                Atuação em campanhas de marketing digital, com foco em e-mail
+                marketing e SMS. Responsável pela implementação de estratégias,
+                análise de resultados e gestão de leads — iniciativa que evoluiu
+                para um novo produto na agência. Certificação em e-mail
+                marketing pela plataforma VEEVA. Experiência com Wordpress.
               </p>
             </li>
 
@@ -68,7 +76,10 @@ export default function Experiencias() {
                 Jul 2021 - Mar 2022
               </time>
               <p className="text-base font-normal text-white mt-2">
-                Minhas funções foram diretamente ligadas a Email Marketing e SMS, onde realizava produções de e-mails em HTML e CSS, agendamento de envios, planejamento de automações, apresentações de resultados e limpeza de base de contatos. Utilizava com frequencia plataformas como Dinamize, RD Station, Mail Chimp, Salesforce Marketing Cloud, Get Response, Zenvia e Litmus para realizar envios de e-mails e SMS.
+                Criação e disparo de campanhas de e-mail marketing (HTML/CSS),
+                automações, segmentação e análise de resultados. Utilização de
+                ferramentas como RD Station, Mailchimp, Salesforce Marketing
+                Cloud, Dinamize e Zenvia.
               </p>
             </li>
 
@@ -81,7 +92,10 @@ export default function Experiencias() {
                 Jan 2021 - Jul 2021
               </time>
               <p className="text-base font-normal text-white mt-2">
-                Responsável por desenvolver planejamentos, criar e otimizar diversas campanhas em mídias pagas. Além disso, realizava acompanhamentos com os clientes, criava e apresentava relatórios com os resultados obtidos durante todo periodo. Nesse cargo, desenvolvi conhecimentos em plataformas de marketing como Meta Ads, Google Ads,  Linkedin Ads e Pareto. Também utilizava o Google Analitycs na obtenção de dados e Google Tag Manager para realizar o rastreamento dos dados.
+                Planejamento, criação e otimização de campanhas em mídias pagas.
+                Análise de performance, elaboração de relatórios e
+                acompanhamento de clientes. Experiência com Google Ads, Meta
+                Ads, LinkedIn Ads, Google Analytics e Tag Manager.
               </p>
             </li>
 
@@ -94,7 +108,9 @@ export default function Experiencias() {
                 Ago 2020 - Nov 2020
               </time>
               <p className="text-base font-normal text-white mt-2">
-                Continuei realizando as funções de freelancer, auxiliava o time de E-mail marketing com produções de e-mails em HTML e CSS, realizava ajustes simples de Layout no Photoshop e ajudava os desenvolvedores front-end com ajustes de responsividade em páginas, alterações de conteúdo e criação de novas páginas.
+                Apoio na criação de campanhas de e-mail marketing,
+                desenvolvimento em HTML/CSS e ajustes de layout. Auxílio em
+                melhorias de responsividade e manutenção de páginas.
               </p>
             </li>
 
@@ -107,7 +123,9 @@ export default function Experiencias() {
                 Jun 2020 - Ago 2020
               </time>
               <p className="text-base font-normal text-white mt-2">
-                Em um projeto específico, trabalhava focado em receber reclamações de clientes e resolver os problemas relacionados ao acesso dos médicos no portal da empresa. Também realizava mapeamentos de médicos para receber amostras gratuitas de produtos e realizava auditorias mensais referente ao financeiro. Dentro de todos esse processo, aprofundei meus conhecimentos no Excel e tive meu primeiro contato com a plataforma SAP (Gigya).
+                Atuação em suporte ao cliente, resolução de problemas de acesso
+                e análise de dados. Experiência com Excel avançado e primeiros
+                contatos com SAP (Gigya).
               </p>
             </li>
           </ol>
@@ -145,7 +163,9 @@ export default function Experiencias() {
                 Jan 2019 - Nov 2019
               </time>
               <p className="text-base font-normal text-white mt-2">
-                Realizava manutenção elétrica, corretiva e preventiva em máquinas e equipamentos, analisava e avaliava as necessidades de troca, ajuste e reparo de peças e fazia testes de funcionamento. Também era realizado o desenvolvimento em ladder de funções para CLPs e temporizadores. Além disso, auxiliei o almoxarifado com o controle e registros de entrada e saida de todas as peças do estoque pelo Excel e desenvolvi plantas baixa e corte do local utilizando Autocad.
+                Manutenção preventiva e corretiva de equipamentos industriais.
+                Programação básica em CLP (Ladder), controle de estoque via
+                Excel e desenvolvimento de projetos em AutoCAD.
               </p>
             </li>
           </ol>

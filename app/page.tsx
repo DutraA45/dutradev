@@ -1,13 +1,8 @@
-"use client";
-
 import Image from "next/image";
-import BackgroundParticles from "./components/BackgroundParticles";
 
 export default function Home() {
   return (
-    <div className="relative">
-      <BackgroundParticles />
-
+    <div>
       {/* Coluna de conteúdo */}
       <div className="content-col p-8">
         {/* Sobre Mim */}

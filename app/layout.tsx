@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
 import Image from "next/image";
+import BackgroundParticles from "./components/BackgroundParticles";
 
 export const metadata: Metadata = {
   title: "DutraDev",
@@ -15,7 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="h-full">
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col relative">
+        <BackgroundParticles />
         <div className="md:pt-28 flex flex-col flex-grow">
           <Header />
           <main className="flex-grow flex justify-center pt-40 sm:pt-0">
