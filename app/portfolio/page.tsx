@@ -18,14 +18,41 @@ export default function portfolio() {
       link: "https://github.com/DutraA45/dutradev",
     },
     {
+      title: "SilverCraft",
+      description:
+        "Ferramenta em desenvolvimento para o Albion Online que permite consultar preços de itens via API, com planos de expansão para análise completa de mercado e crafting.",
+      image: "https://placehold.co/600x400/1e293b/94a3b8?text=SilverCraft",
+      tags: [
+        {
+          name: "Next.js",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+        },
+        {
+          name: "Shadcn",
+          icon: "https://ui.shadcn.com/favicon.ico",
+        },
+        {
+          name: "API",
+          icon: "https://cdn.simpleicons.org/openapiinitiative",
+        },
+      ],
+      link: "https://silvercraft-chi.vercel.app/",
+    },
+    {
       title: "Cellflow Manager",
       description:
         "Automação inteligente para gestão de assistência técnica, integrando planilhas e dashboards em tempo real.",
       image: "https://placehold.co/600x400/1e293b/94a3b8?text=Cellflow+Manager",
-      // tags: [
-      //   { name: "Next.js", icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
-      //   { name: "Node.js", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" }
-      // ],
+      tags: [
+        {
+          name: "Excel",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg",
+        },
+        {
+          name: "Javascript",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+        },
+      ],
       link: "https://github.com/DutraA45/cellflow-manager",
     },
     {
@@ -55,22 +82,29 @@ export default function portfolio() {
         "Análise de Dados sobre Incêndios Florestais e Seca no Brasil em 2024.",
       image:
         "https://placehold.co/600x400/1e293b/94a3b8?text=FireWatch+Analysis",
-      // tags: [
-      //   { name: "Vue.js", icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" },
-      //   { name: "Firebase", icon: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" }
-      // ],
+      tags: [
+        {
+          name: "Python",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+        },
+        {
+          name: "Jupyter Notebook",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg",
+        },
+      ],
       link: "https://github.com/DutraA45/FireWatch_Brazil_2024",
     },
     {
       title: "Iniflex CLI",
       description:
         "Sistema de gestão de funcionários via console em Java puro, aplicando conceitos fundamentais de POO e collections sem bibliotecas externas.",
-      image:
-        "https://placehold.co/600x400/1e293b/94a3b8?text=IniflexCLI",
-      // tags: [
-      //   { name: "Vue.js", icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" },
-      //   { name: "Firebase", icon: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" }
-      // ],
+      image: "https://placehold.co/600x400/1e293b/94a3b8?text=IniflexCLI",
+      tags: [
+        {
+          name: "Java",
+          icon: "hhttps://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+        },
+      ],
       link: "https://github.com/DutraA45/IniflexCLI",
     },
     {
@@ -79,10 +113,20 @@ export default function portfolio() {
         "Landing page moderna para SaaS desenvolvida com HTML e Tailwind CSS, focada no aprendizado do framework utility-first.",
       image:
         "https://placehold.co/600x400/1e293b/94a3b8?text=SaaS+Landing+Page",
-      // tags: [
-      //   { name: "Vue.js", icon: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" },
-      //   { name: "Firebase", icon: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" }
-      // ],
+      tags: [
+        {
+          name: "HTML",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+        },
+        {
+          name: "CSS",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+        },
+        {
+          name: "Tailwind",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        },
+      ],
       link: "https://github.com/DutraA45/SaaS-Landing-Page",
     },
   ];
@@ -107,9 +151,12 @@ export default function portfolio() {
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
-                  {/* <div className="flex flex-wrap gap-2 mb-2">
+                  <div className="flex flex-wrap gap-2 mb-2">
                     {project.tags.map((tag, tagIndex) => (
-                      <span key={tagIndex} className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
+                      <span
+                        key={tagIndex}
+                        className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700"
+                      >
                         <img
                           src={tag.icon}
                           alt={tag.name}
@@ -118,7 +165,7 @@ export default function portfolio() {
                         {tag.name}
                       </span>
                     ))}
-                  </div> */}
+                  </div>
                 </div>
                 <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
                   <h3 className="text-xl font-bold text-white mb-3">

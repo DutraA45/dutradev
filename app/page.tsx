@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
+import BackgroundParticles from "./components/BackgroundParticles";
 
 export default function Home() {
   return (
-    <>
+    <div className="relative">
+      <BackgroundParticles />
+
       {/* Coluna de conteúdo */}
       <div className="content-col p-8">
         {/* Sobre Mim */}
@@ -13,9 +18,8 @@ export default function Home() {
           <p className="text-lg leading-relaxed text-white">
             <b>Engenheiro da Computação</b> com pós em Desenvolvimento{" "}
             <b>Fullstack</b>, atualmente com foco em <b>Front-End</b>.
-            Experiência em Marketing Digital aplicada ao desenvolvimento
-            de soluções técnicas eficientes e alinhadas com estratégias de
-            negócio.
+            Experiência em Marketing Digital aplicada ao desenvolvimento de
+            soluções técnicas eficientes e alinhadas com estratégias de negócio.
           </p>
         </div>
 
@@ -180,15 +184,14 @@ export default function Home() {
             {/* Conteúdo que aparece no hover */}
             <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
               <div className="flex justify-between items-start mb-3">
-                <h3 className="text-xl font-bold text-white">
-                  Portfólio
-                </h3>
+                <h3 className="text-xl font-bold text-white">Portfólio</h3>
                 <span className="text-xs font-medium bg-indigo-500/20 text-indigo-400 px-2 py-1 rounded-full">
                   Destaque
                 </span>
               </div>
               <p className="text-gray-300 text-sm mb-4">
-                Website pessoal para exibição de projetos com design responsivo e animações modernas.
+                Website pessoal para exibição de projetos com design responsivo
+                e animações modernas.
               </p>
               <a
                 href="https://github.com/DutraA45/dutradev"
@@ -226,7 +229,8 @@ export default function Home() {
                 Cellflow Manager
               </h3>
               <p className="text-gray-300 text-sm mb-4">
-                Automação inteligente para gestão de assistência técnica, integrando planilhas e dashboards em tempo real
+                Automação inteligente para gestão de assistência técnica,
+                integrando planilhas e dashboards em tempo real
               </p>
               <a
                 href="https://github.com/DutraA45/cellflow-manager"
@@ -249,23 +253,23 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
                   <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                    alt="React Native"
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                    alt="Python"
                     width={12}
                     height={12}
                     className="w-3 h-3 mr-1.5"
                   />
-                  React Native
+                  Python
                 </span>
                 <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
                   <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
-                    alt="TypeScript"
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg"
+                    alt="Jupyter Notebook"
                     width={12}
                     height={12}
                     className="w-3 h-3 mr-1.5"
                   />
-                  TypeScript
+                  Jupyter Notebook
                 </span>
               </div>
             </div>
@@ -274,7 +278,8 @@ export default function Home() {
                 FireWatch 2024
               </h3>
               <p className="text-gray-300 text-sm mb-4">
-                Análise de Dados sobre Incêndios Florestais e Seca no Brasil em 2024.
+                Análise de Dados sobre Incêndios Florestais e Seca no Brasil em
+                2024.
               </p>
               <a
                 href="https://github.com/DutraA45/FireWatch_Brazil_2024"
@@ -290,6 +295,6 @@ export default function Home() {
           © 2025 Dutra.dev. All rights reserved.
         </div>
       </div>
-    </>
+    </div>
   );
 }
