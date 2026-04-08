@@ -18,10 +18,10 @@ export default function RootLayout({
     <html lang="pt-BR" className="h-full">
       <body className="min-h-screen flex flex-col relative">
         <BackgroundParticles />
-        <div className="md:pt-28 flex flex-col flex-grow">
+        <div className="md:pt-36 flex flex-col grow">
           <Header />
-          <main className="flex-grow flex justify-center pt-40 sm:pt-0">
-            <div className="flex flex-col md:flex-row max-w-7xl block-bg border-1 border-b-0 border-default rounded-t-lg md:min-w-7xl w-full">
+          <main className="grow flex justify-center pt-40 sm:pt-0">
+            <div className="flex flex-col md:flex-row max-w-7xl block-bg border border-b-0 border-default rounded-t-lg md:min-w-7xl w-full">
               <div className="details-col pt-10 pr-10 pl-10 pb-5 flex flex-col items-center relative">
                 <div className="mb-6 -mt-42 z-10 w-60 h-60 rounded-full border-2 border-default overflow-hidden relative">
                   <Image
@@ -48,7 +48,7 @@ export default function RootLayout({
                   {/* Localização */}
                   <div className="flex items-center gap-4 text-white">
                     <svg
-                      className="w-5 h-5 mr-2 flex-shrink-0"
+                      className="w-5 h-5 mr-2 shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -64,7 +64,7 @@ export default function RootLayout({
                   {/* Email */}
                   <div className="flex items-center gap-4 text-white">
                     <svg
-                      className="w-5 h-5 mr-2 flex-shrink-0"
+                      className="w-5 h-5 mr-2 shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -77,7 +77,7 @@ export default function RootLayout({
                   {/* Telefone */}
                   <div className="flex items-center gap-4 text-white">
                     <svg
-                      className="w-5 h-5 mr-2 flex-shrink-0"
+                      className="w-5 h-5 mr-2 shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >

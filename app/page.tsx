@@ -11,10 +11,10 @@ export default function Home() {
             Sobre Mim 👨‍💻
           </h1>
           <p className="text-lg leading-relaxed text-white">
-            <b>Engenheiro da Computação</b> com pós em Desenvolvimento{" "}
-            <b>Fullstack</b>, atualmente com foco em <b>Front-End</b>.
-            Experiência em Marketing Digital aplicada ao desenvolvimento de
-            soluções técnicas eficientes e alinhadas com estratégias de negócio.
+            Desenvolvedor Front-End com foco em <b>React</b> e <b>Next.js</b>,
+            criando interfaces rápidas, interativas e orientadas a resultados.
+            Experiência em <b>marketing digital</b> aplicada ao desenvolvimento
+            de soluções com <b>impacto real</b>.
           </p>
         </div>
 
@@ -25,27 +25,6 @@ export default function Home() {
           </h1>
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4">
             {/* Lista de blocos */}
-            <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
-              <Image
-                src="/tech-icons/html.svg"
-                alt="HTML"
-                width={28}
-                height={28}
-                className="h-7 w-7 object-contain mb-2 mt-1"
-              />
-              <span className="text-sm">HTML</span>
-            </div>
-
-            <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
-              <Image
-                src="/tech-icons/css.svg"
-                alt="CSS"
-                width={28}
-                height={28}
-                className="h-7 w-7 object-contain mb-2 mt-1"
-              />
-              <span className="text-sm">CSS</span>
-            </div>
 
             <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
               <Image
@@ -82,6 +61,17 @@ export default function Home() {
 
             <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
               <Image
+                src="/tech-icons/next.svg"
+                alt="Next"
+                width={28}
+                height={28}
+                className="h-7 w-7 object-contain mb-2 mt-1"
+              />
+              <span className="text-sm">Next</span>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+              <Image
                 src="/tech-icons/node.svg"
                 alt="Node"
                 width={28}
@@ -93,13 +83,24 @@ export default function Home() {
 
             <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
               <Image
-                src="/tech-icons/next.svg"
-                alt="Next"
+                src="/tech-icons/tailwind.svg"
+                alt="Tailwind"
                 width={28}
                 height={28}
                 className="h-7 w-7 object-contain mb-2 mt-1"
               />
-              <span className="text-sm">Next</span>
+              <span className="text-sm">Tailwind</span>
+            </div>
+
+            <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
+              <Image
+                src="/tech-icons/shadcn.svg"
+                alt="Shadcn UI"
+                width={28}
+                height={28}
+                className="h-7 w-7 object-contain mb-2 mt-1"
+              />
+              <span className="text-sm">Shadcn UI</span>
             </div>
 
             <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
@@ -115,13 +116,13 @@ export default function Home() {
 
             <div className="bg-gray-800 rounded-lg p-2 flex flex-col items-center justify-center hover:scale-105 transition-transform">
               <Image
-                src="/tech-icons/tailwind.svg"
-                alt="Tailwind"
+                src="/tech-icons/cypress.svg"
+                alt="Cypress"
                 width={28}
                 height={28}
                 className="h-7 w-7 object-contain mb-2 mt-1"
               />
-              <span className="text-sm">Tailwind</span>
+              <span className="text-sm">Cypress</span>
             </div>
           </div>
         </div>
@@ -151,7 +152,7 @@ export default function Home() {
             />
 
             {/* Overlay e tags (sempre visíveis) */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
                   <Image
@@ -205,7 +206,7 @@ export default function Home() {
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-500"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
                   <Image
@@ -244,7 +245,7 @@ export default function Home() {
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-500"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
                   <Image
