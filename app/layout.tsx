@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Image from "next/image";
 import BackgroundParticles from "./components/BackgroundParticles";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "DutraDev",
@@ -148,6 +149,7 @@ export default function RootLayout({
               </div>
 
               {children}
+              <Analytics />
             </div>
           </main>
         </div>
