@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function portfolio() {
   const projects = [
     {
@@ -145,19 +147,19 @@ export default function portfolio() {
                 key={index}
                 className="group relative h-56 rounded-2xl overflow-hidden"
               >
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/30 to-transparent p-4 flex flex-col justify-end">
                   <div className="flex flex-wrap gap-2 mb-2">
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
                         className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700"
                       >
-                        <img
+                        <Image
                           src={tag.icon}
                           alt={tag.name}
                           className="w-3 h-3 mr-1.5"
