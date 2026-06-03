@@ -71,7 +71,7 @@ export default function portfolio() {
         },
         {
           name: "Cypress",
-          icon: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Cypress_logo_%282020%29.svg",
+          icon: "/tech-icons/cypress.svg",
         },
       ],
       link: "https://github.com/DutraA45/qa-mastery",
@@ -102,7 +102,7 @@ export default function portfolio() {
       tags: [
         {
           name: "Java",
-          icon: "hhttps://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+          icon: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
         },
       ],
       link: "https://github.com/DutraA45/IniflexCLI",

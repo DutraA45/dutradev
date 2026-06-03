@@ -240,8 +240,8 @@ export default function Home() {
           {/* Projeto 3 */}
           <div className="group relative h-56 rounded-2xl overflow-hidden">
             <Image
-              src="https://placehold.co/600x400/1e293b/94a3b8?text=FireWatch+Analysis"
-              alt="FireWatch 2024"
+              src="https://placehold.co/600x400/1e293b/94a3b8?text=QA+Mastery"
+              alt="QA Mastery"
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-500"
             />
@@ -249,36 +249,44 @@ export default function Home() {
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
                   <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                    alt="Python"
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                    alt="React"
                     width={12}
                     height={12}
                     className="w-3 h-3 mr-1.5"
                   />
-                  Python
+                  React
                 </span>
                 <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
                   <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg"
-                    alt="Jupyter Notebook"
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+                    alt="NodeJS"
                     width={12}
                     height={12}
                     className="w-3 h-3 mr-1.5"
                   />
-                  Jupyter Notebook
+                  NodeJS
+                </span>
+                <span className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700">
+                  <Image
+                    src="/tech-icons/cypress.svg"
+                    alt="Cypress"
+                    width={12}
+                    height={12}
+                    className="w-3 h-3 mr-1.5"
+                  />
+                  Cypress
                 </span>
               </div>
             </div>
             <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
-              <h3 className="text-xl font-bold text-white mb-3">
-                FireWatch 2024
-              </h3>
+              <h3 className="text-xl font-bold text-white mb-3">QA Mastery</h3>
               <p className="text-gray-300 text-sm mb-4">
-                Análise de Dados sobre Incêndios Florestais e Seca no Brasil em
-                2024.
+                Sistema full-stack de gestão de usuários com testes
+                automatizados e integração contínua para garantir qualidade.
               </p>
               <a
-                href="https://github.com/DutraA45/FireWatch_Brazil_2024"
+                href="https://github.com/DutraA45/qa-mastery"
                 className="text-indigo-400 text-sm font-medium inline-flex items-center hover:underline"
               >
                 Ver projeto <span className="ml-1">→</span>
