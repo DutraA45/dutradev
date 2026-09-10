@@ -1,188 +1,101 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Menu, X } from "lucide-react";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { cn } from "@/lib/utils";
+import { navLinks } from "@/lib/data/nav-links";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  // Fechar menu ao pressionar ESC
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        setIsMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  const pathname = usePathname();
 
   return (
     <header className="max-sm:sticky max-sm:z-50">
       <div className="max-w-7xl mx-auto">
         {/* Menu hamburguer (mobile) */}
         <div className="md:hidden p-4 flex justify-end">
-          <button
-            className="text-white"
-            onClick={toggleMenu}
-            aria-label="Menu"
-            aria-expanded={isMenuOpen}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </div>
+          <Sheet>
+            <SheetTrigger className="text-white" aria-label="Menu">
+              <Menu className="w-6 h-6" />
+            </SheetTrigger>
 
-        {/* Overlay e Menu lateral */}
-        {isMenuOpen && (
-          <>
-            {/* Overlay escuro */}
-            <div
-              className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
-              onClick={() => setIsMenuOpen(false)}
-            />
-            
-            {/* Menu lateral */}
-            <div className="fixed inset-y-0 right-0 w-4/5 max-w-sm bg-gray-800 z-50 shadow-lg transform transition-transform duration-300 ease-in-out md:hidden">
-              <div className="flex justify-end p-4">
-                <button
-                  onClick={() => setIsMenuOpen(false)}
-                  className="text-white hover:text-green-400"
+            <SheetContent
+              side="right"
+              showCloseButton={false}
+              className="w-4/5 max-w-sm gap-0 border-l-0 bg-gray-800"
+            >
+              <SheetTitle className="sr-only">Menu de navegação</SheetTitle>
+
+              <div className="flex items-center justify-between px-6 pt-6 pb-4">
+                <span className="text-white font-semibold text-lg">
+                  Jefferson Dutra
+                </span>
+                <SheetClose
                   aria-label="Fechar menu"
+                  className="text-white hover:text-green-400 transition-colors"
                 >
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </button>
+                  <X className="w-6 h-6" />
+                </SheetClose>
               </div>
-              
-              <nav className="px-6 py-4">
-                <ul className="flex flex-col space-y-6">
-                  <li>
-                    <Link
-                      href="/"
-                      className="text-white hover:text-green-400 transition-colors text-lg block py-2"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Sobre
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/formacao"
-                      className="text-white hover:text-green-400 transition-colors text-lg block py-2"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Formação
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/experiencias"
-                      className="text-white hover:text-green-400 transition-colors text-lg block py-2"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Experiências
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/portfolio"
-                      className="text-white hover:text-green-400 transition-colors text-lg block py-2"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Portfólio
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/contato"
-                      className="text-white hover:text-green-400 transition-colors text-lg block py-2"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Contato
-                    </Link>
-                  </li>
+
+              <nav className="px-4 py-2">
+                <ul className="flex flex-col gap-1">
+                  {navLinks.map((link) => {
+                    const isActive = pathname === link.href;
+                    const Icon = link.icon;
+
+                    return (
+                      <li key={link.href}>
+                        <SheetClose
+                          nativeButton={false}
+                          render={
+                            <Link
+                              href={link.href}
+                              className={cn(
+                                "flex items-center gap-3 rounded-lg px-3 py-3 text-lg transition-colors",
+                                isActive
+                                  ? "bg-green-500/10 text-green-400"
+                                  : "text-white hover:bg-white/5 hover:text-green-400"
+                              )}
+                            />
+                          }
+                        >
+                          <Icon className="w-5 h-5 shrink-0" />
+                          {link.label}
+                        </SheetClose>
+                      </li>
+                    );
+                  })}
                 </ul>
               </nav>
-            </div>
-          </>
-        )}
+            </SheetContent>
+          </Sheet>
+        </div>
 
         {/* Navegação principal (desktop) */}
         <div className="hidden md:flex justify-end py-4 px-8">
           <nav>
             <ul className="flex list-none items-center">
-              <li className="flex items-center">
-                <Link
-                  href="/"
-                  className="text-white hover:text-green-400 transition-colors px-4"
-                >
-                  Sobre
-                </Link>
-                <span className="text-green-600">|</span>
-              </li>
-              <li className="flex items-center">
-                <Link
-                  href="/formacao"
-                  className="text-white hover:text-green-400 transition-colors px-4"
-                >
-                  Formação
-                </Link>
-                <span className="text-green-600">|</span>
-              </li>
-              <li className="flex items-center">
-                <Link
-                  href="/experiencias"
-                  className="text-white hover:text-green-400 transition-colors px-4"
-                >
-                  Experiências
-                </Link>
-                <span className="text-green-600">|</span>
-              </li>
-              <li className="flex items-center">
-                <Link
-                  href="/portfolio"
-                  className="text-white hover:text-green-400 transition-colors px-4"
-                >
-                  Portfólio
-                </Link>
-                <span className="text-green-600">|</span>
-              </li>
-              <li>
-                <Link
-                  href="/contato"
-                  className="text-white hover:text-green-400 transition-colors px-4"
-                >
-                  Contato
-                </Link>
-              </li>
+              {navLinks.map((link, index) => (
+                <li key={link.href} className="flex items-center">
+                  <Link
+                    href={link.href}
+                    className="text-white hover:text-green-400 transition-colors px-4"
+                  >
+                    {link.label}
+                  </Link>
+                  {index < navLinks.length - 1 && (
+                    <span className="text-green-600">|</span>
+                  )}
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
