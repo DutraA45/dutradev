@@ -1,64 +1,12 @@
 import { PageSection } from "@/app/components/PageSection";
 import { SectionHeading } from "@/app/components/SectionHeading";
 import { TechBadge } from "@/app/components/TechBadge";
-import { ProjectCard } from "@/app/components/ProjectCard";
+import { ProjectCard } from "@/app/components/portfolio/ProjectCard";
 import { techStack } from "@/lib/data/tech-stack";
-import type { Project } from "@/lib/data/projects";
+import { projects } from "@/lib/data/projects";
 
-const featuredProjects: (Project & { featuredLabel?: string })[] = [
-  {
-    title: "Portfólio",
-    description:
-      "Website pessoal para exibição de projetos com design responsivo e animações modernas.",
-    image: "https://placehold.co/600x400/1e293b/94a3b8?text=Portfólio",
-    tags: [
-      {
-        name: "React",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-      },
-      {
-        name: "TypeScript",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-      },
-    ],
-    link: "https://github.com/DutraA45/dutradev",
-    featuredLabel: "Destaque",
-  },
-  {
-    title: "Cellflow Manager",
-    description:
-      "Automação inteligente para gestão de assistência técnica, integrando planilhas e dashboards em tempo real",
-    image: "https://placehold.co/600x400/1e293b/94a3b8?text=Cellflow+Manager",
-    tags: [
-      {
-        name: "JavaScript",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-      },
-    ],
-    link: "https://github.com/DutraA45/cellflow-manager",
-  },
-  {
-    title: "QA Mastery",
-    description:
-      "Sistema full-stack de gestão de usuários com testes automatizados e integração contínua para garantir qualidade.",
-    image: "https://placehold.co/600x400/1e293b/94a3b8?text=QA+Mastery",
-    tags: [
-      {
-        name: "React",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-      },
-      {
-        name: "NodeJS",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
-      },
-      {
-        name: "Cypress",
-        icon: "/tech-icons/cypress.svg",
-      },
-    ],
-    link: "https://github.com/DutraA45/qa-mastery",
-  },
-];
+/** Os três primeiros da mesma lista do portfólio — uma fonte só de verdade. */
+const featuredProjects = projects.slice(0, 3);
 
 export default function Home() {
   return (
@@ -96,12 +44,11 @@ export default function Home() {
       </div>
 
       {/* Grid de Projetos */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {featuredProjects.map((project) => (
           <ProjectCard
-            key={project.title}
-            project={project}
-            featuredLabel={project.featuredLabel}
+            key={project.id}
+            project={{ ...project, featured: false }}
           />
         ))}
       </div>

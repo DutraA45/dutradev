@@ -6,7 +6,7 @@ export function ExperienceCta() {
   const linkedin = socialLinks.find((link) => link.platform === "linkedin");
 
   return (
-    <section className="dd-reveal rounded-2xl border border-default bg-linear-to-br from-green-500/[0.08] to-transparent p-6 sm:p-8">
+    <section className="dd-reveal rounded-2xl border border-default bg-linear-to-br from-green-500/8 to-transparent p-6 sm:p-8">
       <h2 className="text-xl font-semibold text-white sm:text-2xl">
         Procurando alguém para o time?
       </h2>

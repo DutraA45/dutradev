@@ -1,15 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Todas as imagens do site são locais (/public). Sem hosts remotos não é
+  // preciso liberar SVG externo, que era o único motivo do dangerouslyAllowSVG.
   images: {
-    remotePatterns: [
-      { protocol: "https", hostname: "placehold.co" },
-      { protocol: "https", hostname: "upload.wikimedia.org" },
-      { protocol: "https", hostname: "ui.shadcn.com" },
-      { protocol: "https", hostname: "cdn.simpleicons.org" },
-    ],
-    dangerouslyAllowSVG: true,  // Permite carregar imagens SVG de domínios externos
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;", // Adiciona segurança extra
+    remotePatterns: [],
   },
 };
 

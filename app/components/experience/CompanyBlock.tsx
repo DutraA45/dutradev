@@ -47,8 +47,7 @@ export function CompanyBlock({
                 ·
               </span>
               <span>
-                {experience.roles.length}{" "}
-                {multiRole ? "cargos" : "cargo"}
+                {experience.roles.length} {multiRole ? "cargos" : "cargo"}
               </span>
             </p>
           </div>
@@ -65,7 +64,7 @@ export function CompanyBlock({
         {multiRole && (
           <span
             aria-hidden
-            className="absolute bottom-6 left-[26px] top-11 w-px sm:left-[30px]"
+            className="absolute bottom-6 left-6.5 top-11 w-px sm:left-7.5"
             style={{
               background:
                 "linear-gradient(to bottom, #3D444D 0%, #3D444D 90%, transparent 100%)",

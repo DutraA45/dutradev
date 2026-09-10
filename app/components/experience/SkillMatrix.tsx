@@ -1,5 +1,5 @@
 import { skillGroups } from "@/lib/data/experiences";
-import { SectionTitle } from "@/app/components/experience/SectionTitle";
+import { SectionTitle } from "@/app/components/SectionTitle";
 
 /** Recorte por domínio das competências exercidas nos cargos acima. */
 export function SkillMatrix() {

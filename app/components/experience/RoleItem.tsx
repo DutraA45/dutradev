@@ -33,7 +33,7 @@ function StepChip({ label }: { label: string }) {
         "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs font-medium",
         promotion
           ? "border-green-500/40 bg-green-500/10 text-green-400"
-          : "border-default bg-[#161B22] text-gray-300"
+          : "border-default bg-[#161B22] text-gray-300",
       )}
     >
       <Icon className="size-3.5 shrink-0" aria-hidden />
@@ -60,8 +60,8 @@ export function RoleItem({
       <span
         aria-hidden
         className={cn(
-          "absolute left-0 top-[19px] size-[13px] rounded-full ring-4 ring-[#0D1117]",
-          featured && "shadow-[0_0_0_5px_rgba(34,197,94,0.16)]"
+          "absolute left-0 top-4.75 size-3.25 rounded-full ring-4 ring-[#0D1117]",
+          featured && "shadow-[0_0_0_5px_rgba(34,197,94,0.16)]",
         )}
         style={{ backgroundColor: rampStep(index) }}
       />
@@ -70,8 +70,8 @@ export function RoleItem({
         className={cn(
           "rounded-xl border p-4 transition-colors duration-200",
           featured
-            ? "border-green-500/30 bg-green-500/[0.05]"
-            : "border-transparent hover:border-default hover:bg-[#161B22]"
+            ? "border-green-500/30 bg-green-500/5"
+            : "border-transparent hover:border-default hover:bg-[#161B22]",
         )}
       >
         <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
@@ -112,7 +112,7 @@ export function RoleItem({
             >
               <span
                 aria-hidden
-                className="mt-[7px] size-1 shrink-0 rounded-full bg-green-500/80"
+                className="mt-1.75 size-1 shrink-0 rounded-full bg-green-500/80"
               />
               <span>{highlight}</span>
             </li>

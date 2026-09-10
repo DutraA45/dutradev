@@ -1,144 +1,115 @@
-export type ProjectTag = {
-  name: string;
-  icon: string;
-};
+/** Área principal do projeto — é por ela que o portfólio filtra. */
+export const projectAreas = [
+  "Front-End",
+  "Fullstack",
+  "Back-End",
+  "Dados",
+  "Automação",
+] as const;
+
+export type ProjectArea = (typeof projectAreas)[number];
 
 export type Project = {
+  /** Slug estável: chave de lista e âncora de URL. */
+  id: string;
   title: string;
-  description: string;
-  image: string;
-  tags: ProjectTag[];
-  link: string;
+  area: ProjectArea;
+  /** Uma linha: o que o projeto é e para quem. */
+  summary: string;
+  /** Só nos projetos em destaque — entregas concretas, em ordem de peso. */
+  highlights?: string[];
+  /** Tecnologias, em ordem de protagonismo. */
+  stack: string[];
+  /** Preenchido só quando o projeto não está concluído. */
+  status?: string;
+  /** Ano de publicação. Some do card enquanto estiver vazio. */
+  year?: string;
+  /** Captura de tela em /public. Sem ela, o card vira texto puro. */
+  image?: string;
+  repo?: string;
+  demo?: string;
+  /** Abre a lista em largura dupla e exibe os highlights. */
+  featured?: boolean;
 };
 
 export const projects: Project[] = [
   {
-    title: "Portfolio Website",
-    description:
-      "Website pessoal para exibição de projetos com design responsivo e animações modernas.",
-    image: "https://placehold.co/600x400/1e293b/94a3b8?text=Portfolio",
-    tags: [
-      {
-        name: "Next.js",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
-      },
-      {
-        name: "Tailwind CSS",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
-      },
-    ],
-    link: "https://github.com/DutraA45/dutradev",
-  },
-  {
+    id: "silvercraft",
     title: "SilverCraft",
-    description:
-      "Ferramenta em desenvolvimento para o Albion Online que permite consultar preços de itens via API, com planos de expansão para análise completa de mercado e crafting.",
-    image: "https://placehold.co/600x400/1e293b/94a3b8?text=SilverCraft",
-    tags: [
-      {
-        name: "Next.js",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
-      },
-      {
-        name: "Shadcn",
-        icon: "https://ui.shadcn.com/favicon.ico",
-      },
-      {
-        name: "API",
-        icon: "https://cdn.simpleicons.org/openapiinitiative",
-      },
+    area: "Front-End",
+    summary:
+      "Ferramenta para o Albion Online que consulta o preço dos itens em tempo real pela API do jogo.",
+    highlights: [
+      "Consulta de preços de itens direto na API pública do Albion Online",
+      "Interface construída em Next.js com componentes Shadcn UI",
+      "Em evolução para análise de mercado e cálculo de crafting",
     ],
-    link: "https://silvercraft-chi.vercel.app/",
+    stack: ["Next.js", "Shadcn UI", "API REST"],
+    status: "Em desenvolvimento",
+    demo: "https://silvercraft-chi.vercel.app/",
+    featured: true,
   },
   {
-    title: "Cellflow Manager",
-    description:
-      "Automação inteligente para gestão de assistência técnica, integrando planilhas e dashboards em tempo real.",
-    image: "https://placehold.co/600x400/1e293b/94a3b8?text=Cellflow+Manager",
-    tags: [
-      {
-        name: "Excel",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg",
-      },
-      {
-        name: "Javascript",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-      },
-    ],
-    link: "https://github.com/DutraA45/cellflow-manager",
-  },
-  {
+    id: "qa-mastery",
     title: "QA Mastery",
-    description:
-      "Sistema full-stack de gestão de usuários com testes automatizados e integração contínua para garantir qualidade.",
-    image: "https://placehold.co/600x400/1e293b/94a3b8?text=QA+Mastery",
-    tags: [
-      {
-        name: "React",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-      },
-      {
-        name: "NodeJS",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
-      },
-      {
-        name: "Cypress",
-        icon: "/tech-icons/cypress.svg",
-      },
-    ],
-    link: "https://github.com/DutraA45/qa-mastery",
+    area: "Fullstack",
+    summary:
+      "Sistema fullstack de gestão de usuários com testes automatizados e integração contínua garantindo a qualidade a cada commit.",
+    stack: ["React", "Node.js", "Cypress"],
+    repo: "https://github.com/DutraA45/qa-mastery",
   },
   {
+    id: "firewatch-2024",
     title: "FireWatch 2024",
-    description:
-      "Análise de Dados sobre Incêndios Florestais e Seca no Brasil em 2024.",
-    image:
-      "https://placehold.co/600x400/1e293b/94a3b8?text=FireWatch+Analysis",
-    tags: [
-      {
-        name: "Python",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-      },
-      {
-        name: "Jupyter Notebook",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg",
-      },
-    ],
-    link: "https://github.com/DutraA45/FireWatch_Brazil_2024",
+    area: "Dados",
+    summary:
+      "Análise de dados sobre incêndios florestais e seca no Brasil ao longo de 2024.",
+    stack: ["Python", "Jupyter Notebook"],
+    repo: "https://github.com/DutraA45/FireWatch_Brazil_2024",
   },
   {
+    id: "cellflow-manager",
+    title: "Cellflow Manager",
+    area: "Automação",
+    summary:
+      "Automação para gestão de assistência técnica, integrando planilhas e dashboards em tempo real.",
+    stack: ["JavaScript", "Excel"],
+    repo: "https://github.com/DutraA45/cellflow-manager",
+  },
+  {
+    id: "dutradev",
+    title: "Portfólio DutraDev",
+    area: "Front-End",
+    summary:
+      "Este site. Portfólio pessoal com páginas estáticas, componentes tipados e design próprio.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    repo: "https://github.com/DutraA45/dutradev",
+  },
+  {
+    id: "iniflex-cli",
     title: "Iniflex CLI",
-    description:
-      "Sistema de gestão de funcionários via console em Java puro, aplicando conceitos fundamentais de POO e collections sem bibliotecas externas.",
-    image: "https://placehold.co/600x400/1e293b/94a3b8?text=IniflexCLI",
-    tags: [
-      {
-        name: "Java",
-        icon: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
-      },
-    ],
-    link: "https://github.com/DutraA45/IniflexCLI",
+    area: "Back-End",
+    summary:
+      "Gestão de funcionários via console em Java puro, aplicando POO e collections sem nenhuma biblioteca externa.",
+    stack: ["Java"],
+    repo: "https://github.com/DutraA45/IniflexCLI",
   },
   {
-    title: "Saas Landing Page",
-    description:
-      "Landing page moderna para SaaS desenvolvida com HTML e Tailwind CSS, focada no aprendizado do framework utility-first.",
-    image:
-      "https://placehold.co/600x400/1e293b/94a3b8?text=SaaS+Landing+Page",
-    tags: [
-      {
-        name: "HTML",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
-      },
-      {
-        name: "CSS",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
-      },
-      {
-        name: "Tailwind",
-        icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
-      },
-    ],
-    link: "https://github.com/DutraA45/SaaS-Landing-Page",
+    id: "saas-landing-page",
+    title: "SaaS Landing Page",
+    area: "Front-End",
+    summary:
+      "Landing page para SaaS em HTML e Tailwind CSS, feita para dominar o modelo utility-first.",
+    stack: ["HTML", "CSS", "Tailwind CSS"],
+    repo: "https://github.com/DutraA45/SaaS-Landing-Page",
   },
 ];
+
+/** Quantos projetos cada área tem — alimenta os contadores dos filtros. */
+export function countByArea() {
+  const counts = new Map<ProjectArea, number>();
+  for (const project of projects) {
+    counts.set(project.area, (counts.get(project.area) ?? 0) + 1);
+  }
+  return counts;
+}

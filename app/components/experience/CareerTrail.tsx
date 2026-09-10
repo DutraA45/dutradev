@@ -1,6 +1,6 @@
 import { careerChapters } from "@/lib/data/experiences";
 import { chapterStep } from "@/lib/experience";
-import { SectionTitle } from "@/app/components/experience/SectionTitle";
+import { SectionTitle } from "@/app/components/SectionTitle";
 
 /** Os capítulos da carreira em uma régua horizontal, do mais antigo ao atual. */
 export function CareerTrail() {
@@ -22,7 +22,7 @@ export function CareerTrail() {
               {nextColor && (
                 <span
                   aria-hidden
-                  className="absolute left-[7px] top-[7px] hidden h-px lg:block"
+                  className="absolute left-1.75 top-1.75 hidden h-px lg:block"
                   style={{
                     width: "calc(100% + 17px)",
                     backgroundImage: `linear-gradient(to right, ${color}, ${nextColor})`,
@@ -32,7 +32,7 @@ export function CareerTrail() {
 
               <span
                 aria-hidden
-                className="relative block size-[15px] rounded-full ring-4 ring-[#0D1117]"
+                className="relative block size-3.75 rounded-full ring-4 ring-[#0D1117]"
                 style={{ backgroundColor: color }}
               />
 

@@ -1,5 +1,10 @@
 import type { Experience } from "@/lib/data/experiences";
-import { formatDuration, monthLabel, rampStep, roleShares } from "@/lib/experience";
+import {
+  formatDuration,
+  monthLabel,
+  rampStep,
+  roleShares,
+} from "@/lib/experience";
 import { cn } from "@/lib/utils";
 
 /**
@@ -22,7 +27,7 @@ export function DurationBar({ experience }: { experience: Experience }) {
         Distribuição do tempo entre os {experience.roles.length} cargos
       </figcaption>
 
-      <div className="flex h-2 gap-[2px]">
+      <div className="flex h-2 gap-0.5">
         {chronological.map(({ role, index, months, share }, position) => (
           <span
             key={role.id}
@@ -32,8 +37,8 @@ export function DurationBar({ experience }: { experience: Experience }) {
             <span
               className={cn(
                 "block h-full w-full rounded-[1px] transition-opacity duration-200 group-hover/seg:opacity-80",
-                position === 0 && "rounded-l-[4px]",
-                position === last && "rounded-r-[4px]"
+                position === 0 && "rounded-l-lg",
+                position === last && "rounded-r-lg",
               )}
               style={{ backgroundColor: rampStep(index) }}
             />
@@ -43,7 +48,9 @@ export function DurationBar({ experience }: { experience: Experience }) {
                 "pointer-events-none absolute bottom-full z-20 mb-2 whitespace-nowrap rounded-md border border-default bg-[#010409] px-2 py-1 text-[11px] text-white opacity-0 shadow-lg transition-opacity duration-150 group-hover/seg:opacity-100",
                 position === 0 && "left-0",
                 position === last && "right-0",
-                position !== 0 && position !== last && "left-1/2 -translate-x-1/2"
+                position !== 0 &&
+                  position !== last &&
+                  "left-1/2 -translate-x-1/2",
               )}
             >
               {role.title} · {formatDuration(months)}
