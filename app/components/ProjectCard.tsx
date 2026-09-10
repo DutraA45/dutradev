@@ -24,16 +24,16 @@ export function ProjectCard({
           {project.tags.map((tag) => (
             <span
               key={tag.name}
-              className="inline-flex items-center bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700"
+              className="inline-flex items-center max-w-full bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs border border-gray-700"
             >
               <Image
                 src={tag.icon}
                 alt={tag.name}
                 width={12}
                 height={12}
-                className="w-3 h-3 mr-1.5"
+                className="w-3 h-3 mr-1.5 shrink-0"
               />
-              {tag.name}
+              <span className="truncate">{tag.name}</span>
             </span>
           ))}
         </div>
@@ -41,15 +41,19 @@ export function ProjectCard({
 
       {/* Conteúdo que aparece no hover */}
       <div className="absolute inset-0 bg-black/80 backdrop-blur-md p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
-        <div className="flex justify-between items-start mb-3">
-          <h3 className="text-xl font-bold text-white">{project.title}</h3>
+        <div className="flex justify-between items-start gap-2 mb-3">
+          <h3 className="text-xl font-bold text-white min-w-0 wrap-break-word line-clamp-2">
+            {project.title}
+          </h3>
           {featuredLabel && (
-            <span className="text-xs font-medium bg-indigo-500/20 text-indigo-400 px-2 py-1 rounded-full">
+            <span className="shrink-0 text-xs font-medium bg-indigo-500/20 text-indigo-400 px-2 py-1 rounded-full">
               {featuredLabel}
             </span>
           )}
         </div>
-        <p className="text-gray-300 text-sm mb-4">{project.description}</p>
+        <p className="text-gray-300 text-sm mb-4 wrap-break-word line-clamp-3">
+          {project.description}
+        </p>
         <a
           href={project.link}
           className="text-indigo-400 text-sm font-medium inline-flex items-center hover:underline"

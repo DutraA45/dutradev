@@ -9,7 +9,7 @@ export function PageSection({
   className?: string;
 }) {
   return (
-    <div className={cn("content-col p-8", className)}>
+    <div className={cn("flex flex-col flex-1 min-w-0 w-full p-8", className)}>
       {children}
       <FooterNote className="md:hidden block mt-auto pt-6 text-gray-400 text-xs" />
     </div>

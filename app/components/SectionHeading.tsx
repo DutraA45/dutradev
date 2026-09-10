@@ -8,7 +8,12 @@ export function SectionHeading({
   className?: string;
 }) {
   return (
-    <h1 className={cn("text-3xl font-semibold mb-6 text-green-500", className)}>
+    <h1
+      className={cn(
+        "text-3xl font-semibold mb-6 text-green-500 wrap-break-word",
+        className
+      )}
+    >
       {children}
     </h1>
   );
