@@ -20,12 +20,14 @@ export const contact = {
 export type ContactInfoItem = {
   icon: LucideIcon;
   label: string;
+  /** Quando existe, a linha da sidebar vira link. */
+  href?: string;
 };
 
 export const contactInfo: ContactInfoItem[] = [
   { icon: MapPin, label: contact.location },
-  { icon: Mail, label: contact.email },
-  { icon: Phone, label: contact.phone.display },
+  { icon: Mail, label: contact.email, href: `mailto:${contact.email}` },
+  { icon: Phone, label: contact.phone.display, href: contact.phone.href },
 ];
 
 /** O que ele procura hoje — alimenta o bloco de disponibilidade. */

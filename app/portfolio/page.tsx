@@ -6,7 +6,7 @@ import { PortfolioCta } from "@/app/components/portfolio/PortfolioCta";
 import { projects } from "@/lib/data/projects";
 
 export const metadata: Metadata = {
-  title: "Portfólio | Jefferson Dutra",
+  title: "Portfólio",
   description:
     "Projetos de Jefferson Dutra: front-end, fullstack, back-end, análise de dados e automação.",
 };

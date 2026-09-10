@@ -6,7 +6,7 @@ import { ContactChannels } from "@/app/components/contact/ContactChannels";
 import { ContactForm } from "@/app/components/contact/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contato | Jefferson Dutra",
+  title: "Contato",
   description:
     "Fale com Jefferson Dutra: e-mail, telefone, LinkedIn e GitHub, ou envie uma mensagem direto pelo site.",
 };

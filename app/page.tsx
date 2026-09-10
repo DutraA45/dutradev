@@ -11,7 +11,6 @@ import { ProjectCard } from "@/app/components/portfolio/ProjectCard";
 import { projects } from "@/lib/data/projects";
 
 export const metadata: Metadata = {
-  title: "Jefferson Dutra · Desenvolvedor Front-End",
   description:
     "Desenvolvedor front-end em React e Next.js, com base em engenharia e histórico em mídia paga e análise de dados.",
 };

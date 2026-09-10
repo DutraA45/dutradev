@@ -5,7 +5,7 @@ export function CareerStats() {
   const { months, roles, progressions, companies } = careerStats();
 
   return (
-    <dl className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+    <dl className="grid grid-cols-2 gap-3 xl:grid-cols-4">
       <StatTile
         label="De atuação profissional"
         value={<DurationValue parts={durationParts(months)} />}

@@ -10,7 +10,7 @@ import { experiences } from "@/lib/data/experiences";
 import { careerStats, formatDuration } from "@/lib/experience";
 
 export const metadata: Metadata = {
-  title: "Experiências | Jefferson Dutra",
+  title: "Experiências",
   description:
     "Trajetória profissional de Jefferson Dutra: da eletrônica industrial ao desenvolvimento front-end, cargo a cargo.",
 };

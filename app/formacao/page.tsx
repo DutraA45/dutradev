@@ -11,7 +11,7 @@ import { educationStats } from "@/lib/education";
 import { formatDuration } from "@/lib/experience";
 
 export const metadata: Metadata = {
-  title: "Formação | Jefferson Dutra",
+  title: "Formação",
   description:
     "Formação acadêmica de Jefferson Dutra: técnico em eletrônica, engenharia da computação e pós-graduação em desenvolvimento fullstack.",
 };

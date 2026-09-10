@@ -47,7 +47,7 @@ export function ProofStrip() {
 
   return (
     <nav aria-label="Resumo em números">
-      <ul className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+      <ul className="grid grid-cols-2 gap-3 xl:grid-cols-4">
         <ProofTile
           href="/experiencias"
           label="De experiência profissional"

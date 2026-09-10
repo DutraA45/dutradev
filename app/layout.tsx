@@ -7,11 +7,34 @@ import { Analytics } from "@vercel/analytics/next";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
+
+const siteName = "Jefferson Dutra";
+const description =
+  "Desenvolvedor front-end em React e Next.js, com base em engenharia e histórico em mídia paga e análise de dados.";
 
 export const metadata: Metadata = {
-  title: "DutraDev",
-  description: "Porfólio do DutraDev",
+  metadataBase: new URL("https://dutradev.vercel.app"),
+  title: {
+    default: `${siteName} · Desenvolvedor Front-End`,
+    template: `%s · ${siteName}`,
+  },
+  description,
+  // Prévia ao compartilhar o link no LinkedIn, WhatsApp e afins.
+  openGraph: {
+    type: "profile",
+    locale: "pt_BR",
+    siteName,
+    title: `${siteName} · Desenvolvedor Front-End`,
+    description,
+    images: [{ url: "/icon.png", width: 512, height: 512, alt: siteName }],
+  },
+  twitter: {
+    card: "summary",
+    title: `${siteName} · Desenvolvedor Front-End`,
+    description,
+    images: ["/icon.png"],
+  },
 };
 
 export default function RootLayout({
@@ -21,12 +44,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={cn("h-full", "font-sans", geist.variable)}>
-      <body className="min-h-screen flex flex-col relative">
+      <body className="relative flex min-h-screen flex-col">
         <BackgroundParticles />
-        <div className="md:pt-36 flex flex-col grow">
+        {/* O padding de cima é o espaço em que a foto da sidebar flutua acima do painel. */}
+        <div className="flex grow flex-col lg:pt-36">
           <Header />
-          <main className="grow flex justify-center pt-40 sm:pt-0">
-            <div className="flex flex-col md:flex-row max-w-7xl block-bg border border-b-0 border-default rounded-t-lg md:min-w-7xl w-full">
+          <main className="flex grow justify-center px-0 pt-40 sm:px-4 lg:pt-0">
+            <div className="block-bg flex w-full max-w-7xl flex-col rounded-t-lg border border-b-0 border-default lg:flex-row">
               <ProfileSidebar />
 
               {children}

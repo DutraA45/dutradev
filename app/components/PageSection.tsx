@@ -11,7 +11,7 @@ export function PageSection({
   return (
     <div className={cn("flex flex-col flex-1 min-w-0 w-full p-8", className)}>
       {children}
-      <FooterNote className="md:hidden block mt-auto pt-6 text-gray-400 text-xs" />
+      <FooterNote className="lg:hidden block mt-auto pt-10 text-gray-500 text-xs" />
     </div>
   );
 }
